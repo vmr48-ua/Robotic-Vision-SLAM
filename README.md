@@ -3,9 +3,8 @@
 This project is based on the information and codes provided by Matlab on the topic of vSLAM with a single camera and the contributions of Akbonline for a python implementation of said method.
 
 <p align="center">
-  <img src="https://github.com/vmr48-ua/Robotic-Vision-SLAM/assets/78732677/9678a172-f57b-49b2-9078-2d7ad7c5b84" alt="Live feature and velocity extraction"/>
+  <img src="[https://github.com/vmr48-ua/Robotic-Vision-SLAM/assets/78732677/9678a172-f57b-49b2-9078-2d7ad7c5b84](https://github.com/vmr48-ua/Robotic-Vision-SLAM/assets/78732677/920d9540-620f-4d8f-8cfc-6f25a30bb8ee)" alt="Live feature and velocity extraction"/>
 </p>
-
 
 To implement a visual Simultaneous Localization And Mapping (vSLAM) workflow, the first step is importing a series of images into a temporary folder. The mapping process is then initialized by grounding a frame as a reference and comparing it to the next so that motion can be tracked. We'll call 'key frames' to each pair of frames whose information has sufficient visual change to ensure proper tracking.
 

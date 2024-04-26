@@ -1,11 +1,10 @@
 # Robotic-Vision-SLAM
-## Algorithm sketch
 This project is based on the information and codes provided by Matlab on the topic of vSLAM with a single camera and the contributions of Akbonline for a python implementation of said method.
-
 <p align="center">
   <img src="https://github.com/vmr48-ua/Robotic-Vision-SLAM/assets/78732677/920d9540-620f-4d8f-8cfc-6f25a30bb8ee" alt="Live feature and velocity extraction"/>
 </p>
 
+## Algorithm sketch
 To implement a visual Simultaneous Localization And Mapping (vSLAM) workflow, the first step is importing a series of images into a temporary folder. The mapping process is then initialized by grounding a frame as a reference and comparing it to the next so that motion can be tracked. We'll call 'key frames' to each pair of frames whose information has sufficient visual change to ensure proper tracking.
 
 We will have to plot two different things, the 2D videoframes with the features marked and a 3D representation of said 2D frames where the camera location is induced by triangulation. The initial pose and placement can be derived from the first keyframes, and the features of the posterior frames get compared to those of the first to induce camera location.

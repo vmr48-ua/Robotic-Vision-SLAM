@@ -13,12 +13,12 @@ This project is based on the information and codes provided by Matlab on the top
 <p align="justify">What we call Oriented FAST and rotated BRIEF (ORB) is basically a fusion of FAST keypoint detector and BRIEF descriptor with many modifications to enhance its performance. ORB features are extracted for each frame and matched to those of the last known keyframe. To do that each key frame features have to be stored so that it can be compared to the incoming key frames using a 'bag-of-features' approach. When a key frame is found, local mapping can be computed so that the point cloud updates through triangulation. </p>
 
 ## Benchmarking
-<div align="justify">  After the results, a comparison with a set file with the ground truth can be used, so as to benchmark the algorithm that we are using to real life data.</div>
+<p align="justify">  After the results, a comparison with a set file with the ground truth can be used, so as to benchmark the algorithm that we are using to real life data.</p>
 
 A set of benchmarking database can be found on this link to the RGB-D SLAM Dataset and Benchmark: https://cvg.cit.tum.de/data/datasets/rgbd-dataset
 
 ## Camera features
-<div align="justify">The camera intrinsic and extrinsic matrix has to be provided so as to ensure the proper calibration of the camera. This ensures that the estimated locations behave as expected.</div>
+<p align="justify">The camera intrinsic and extrinsic matrix has to be provided so as to ensure the proper calibration of the camera. This ensures that the estimated locations behave as expected.</p>
 
 # Contents
-<div align="justify">This repository contains the code necessary to run this algorithm in python. Its main ...</div>
+<p align="justify">This repository contains the code necessary to run this algorithm in python. Its main ...</p>

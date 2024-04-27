@@ -57,4 +57,6 @@ pip install scikit-image
 ```sh
 python3 slam.py prueba.mp4
 ```
-<p align="justify"> Camera and CameraFrame classes are the responsible of the camera calibration and its proper tracking along the whole video. Match_frames ensures that the proper points are matched to the keyframes, printing by console the number of point matches found from one keyframe to the next. Descriptor keeps track of the points and the mesh production. Display makes the 2D representations possible, the 3D one is handled by Descriptor as it already has the point information. Finally, Triangulation, as its name describes, is responsible to compute the 3D points themselves given the relative poses.</p>
+<p align="justify"> 'Camera' and 'CameraFrame' classes are the responsible of the camera calibration and its proper tracking along the whole video. 'Match_frames' ensures that the proper points are matched to the keyframes, printing by console the number of point matches found from one keyframe to the next. 'Descriptor' keeps track of the points and the mesh production. 'Display' makes the 2D representations possible, the 3D one is handled by Descriptor as it already has the point information. Finally 'Triangulation', as its name describes, is responsible to compute the 3D points themselves given the relative poses.</p>
+
+> The report requirement photo is included under the benchmark media folder named as 'proof.png'

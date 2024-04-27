@@ -21,4 +21,40 @@ A set of benchmarking database can be found on this link to the RGB-D SLAM Datas
 <p align="justify">The camera intrinsic and extrinsic matrix has to be provided so as to ensure the proper calibration of the camera. This ensures that the estimated locations behave as expected.</p>
 
 # Contents
-<p align="justify">This repository contains the code necessary to run this algorithm in python. Its main ...</p>
+<p align="justify">This repository contains the code necessary to run this algorithm in python. Under the folder src we can find all the code and its dependencies, while on the benchmark folder we can find the media that was used in the report.</p>
+
+## Installation
+<p align="justify">The dependencies necessary to properly run the code included are:</p>
+
+
+* OpenCV
+```sh
+pip install opencv-python
+```
+* PyGame
+```sh
+pip install pygame
+```
+* NumPy
+```sh
+pip install numpy
+```
+* Skimage
+```sh
+pip install scikit-image
+```
+* Pangolin
+  * [Installation Guide](https://github.com/uoip/pangolin)
+* G2o
+  * [Installation Guide](https://github.com/uoip/g2opy)
+
+
+<p align="justify"> The dependencies Pangolin and G2o are used for the 3D representation, Pygame as a window renderer, Numpy as an array manager and OpenCV for image processing.</p>
+
+## Usage
+<p align="justify"> The file that should be run to recreate the behaviour showed on the report is the file main.py. This file calls to its dependencies to perform the algorithm. The script must be invoked with a mp4 video as an argument that will be the object of analysis. An usage example is</p>
+
+```sh
+python3 slam.py prueba.mp4
+```
+<p align="justify"> Camera and CameraFrame classes are the responsible of the camera calibration and its proper tracking along the whole video. Match_frames ensures that the proper points are matched to the keyframes, printing by console the number of point matches found from one keyframe to the next. Descriptor keeps track of the points and the mesh production. Display makes the 2D representations possible, the 3D one is handled by Descriptor as it already has the point information. Finally, Triangulation, as its name describes, is responsible to compute the 3D points themselves given the relative poses.</p>
